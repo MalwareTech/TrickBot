@@ -5,6 +5,11 @@ import xml.etree.ElementTree as ElementTree
 import requests
 import random
 
+try:
+    unicode        # Python 2
+except NameError:
+    unicode = str  # Python 3
+
 
 class Bot:
     def __init__(self):
